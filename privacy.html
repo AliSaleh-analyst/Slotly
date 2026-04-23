@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Slotly</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-dark: #041824;
+            --bg-mid:  #083d4f;
+            --green:   #4caf7a;
+            --green-dark: #3a9463;
+            --white:   #ffffff;
+            --muted:   rgba(255,255,255,0.65);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-dark);
+            color: var(--white);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 48px;
+            background: rgba(4,24,36,0.95);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+        }
+        .nav-logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+        }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--white); }
+        .btn-nav {
+            background: var(--green);
+            color: var(--white) !important;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px !important;
+        }
+        .page-header {
+            background: radial-gradient(ellipse at top, #0d5c6e 0%, #083d4f 50%, #041824 100%);
+            text-align: center;
+            padding: 64px 24px 48px;
+        }
+        .page-header h1 { font-size: 40px; font-weight: 900; margin-bottom: 10px; }
+        .page-header p { color: var(--muted); font-size: 15px; }
+        .content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 56px 24px 80px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--green);
+            margin: 40px 0 12px;
+        }
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 24px 0 8px;
+            color: var(--white);
+        }
+        p { color: var(--muted); line-height: 1.8; margin-bottom: 12px; font-size: 15px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { color: var(--muted); line-height: 1.8; font-size: 15px; margin-bottom: 4px; }
+        a { color: var(--green); }
+        strong { color: var(--white); }
+        footer {
+            background: rgba(0,0,0,0.3);
+            border-top: 1px solid rgba(255,255,255,0.07);
+            padding: 32px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-logo { font-size: 18px; font-weight: 800; color: var(--white); text-decoration: none; }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--muted); text-decoration: none; font-size: 14px; }
+        .footer-copy { color: var(--muted); font-size: 13px; }
+        @media (max-width: 640px) {
+            nav { padding: 16px 20px; }
+            .nav-links a:not(.btn-nav) { display: none; }
+            footer { flex-direction: column; text-align: center; padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">🌱 Slotly</a>
+    <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="index.html#download" class="btn-nav">Download</a>
+    </div>
+</nav>
+
+<div class="page-header">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: April 23, 2026</p>
+</div>
+
+<div class="content">
+
+    <p>
+        This Privacy Policy describes how <strong>Slotly: Habit Tracker</strong>, developed and operated by
+        <strong>Ali Saleh</strong> ("we", "our", or "the app"), collects, uses, and protects your information
+        when you use our Android application.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>Information you provide directly</h3>
+    <ul>
+        <li><strong>Email address</strong> — if you create an account using email/password or sign in with Google, we collect your email address.</li>
+        <li><strong>Your name</strong> — if you choose to enter a display name in app settings. This is optional and stored only on your device.</li>
+    </ul>
+
+    <h3>Information stored on your device</h3>
+    <ul>
+        <li>Your habits, completion history, streaks, and preferences are stored <strong>locally on your device</strong> using an on-device database and DataStore.</li>
+        <li>Slotly's servers do not store your habit data. However, if you have Android's automatic backup enabled on your device, your local app data (including habit names and history) may be backed up to your personal Google account via Android's standard backup service. This is controlled by your Android device settings, not by Slotly.</li>
+    </ul>
+
+    <h3>Usage and diagnostic data collected automatically</h3>
+    <ul>
+        <li><strong>App usage events</strong> — anonymous events such as habit created, habit completed, AI Coach used, and paywall opened are collected to help us understand how the app is used and improve it. These events contain no habit names or personal content.</li>
+        <li><strong>App instance ID</strong> — Firebase Analytics assigns a pseudonymous app installation identifier to group events from the same device. This ID is not linked to your name or email address.</li>
+        <li><strong>Crash reports</strong> — if the app crashes, we automatically collect a crash report including the error type, stack trace, device model, Android version, and app version. No personal data is included in crash reports.</li>
+    </ul>
+
+    <h3>Information stored in the cloud (optional)</h3>
+    <ul>
+        <li>If you create an account, we store your <strong>Pro subscription status</strong> in Google Firebase Firestore, linked to your user ID. This allows you to restore Pro access on a new device.</li>
+        <li>We do <strong>not</strong> store your habits or personal data in the cloud.</li>
+    </ul>
+
+    <h3>Home screen widget</h3>
+    <ul>
+        <li>If you add the Slotly widget to your home screen, your habit names and today's completion status are displayed on your device's home screen. This data is read from local storage on your device and is not transmitted anywhere.</li>
+    </ul>
+
+    <h3>CSV export</h3>
+    <ul>
+        <li>You can export your habit history as a CSV file from Settings. This file is generated locally and shared only when you explicitly choose to via the Android share sheet. Slotly does not receive or store exported files.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+        <li>To authenticate your account and restore your Pro subscription across devices.</li>
+        <li>To send habit reminder notifications (only if you enable them).</li>
+        <li>To process subscription payments via Google Play Billing.</li>
+        <li>To generate personalised AI coaching responses via Google Gemini (only when you use the Coach tab).</li>
+    </ul>
+    <p>We do <strong>not</strong> sell your data, use it for advertising, or share it with any third parties except as described below.</p>
+
+    <h2>3. Third-Party Services</h2>
+    <ul>
+        <li>
+            <strong>Google Firebase Authentication</strong> — handles account login (email/password and Google Sign-In).
+            <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>
+        </li>
+        <li>
+            <strong>Google Cloud Firestore</strong> — stores your Pro subscription status.
+            <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>
+        </li>
+        <li>
+            <strong>Google Play Billing</strong> — processes all in-app purchases. We do not store or see your payment details.
+            <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+        </li>
+        <li>
+            <strong>Google Firebase Analytics</strong> — collects anonymous app usage events (e.g. which features are used) to help us improve the app. No personally identifiable information is attached to these events.
+            <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>
+        </li>
+        <li>
+            <strong>Google Firebase Crashlytics</strong> — automatically collects crash reports including device model, OS version, app version, and error stack traces. No personal data is included.
+            <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>
+        </li>
+        <li>
+            <strong>Google Gemini API (AI Coach feature)</strong> — when you use the AI Coach, your habit names and
+            today's completion status are sent to Google's Gemini API to generate personalised coaching responses.
+            This data is processed by Google according to their
+            <a href="https://ai.google.dev/gemini-api/terms" target="_blank">Gemini API Terms of Service</a> and
+            <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.
+            Slotly does not store your AI Coach conversations. You can use the app without the AI Coach — it
+            does not activate unless you navigate to the Coach tab.
+        </li>
+    </ul>
+
+    <h2>4. App Permissions</h2>
+    <ul>
+        <li><strong>Notifications</strong> — used to send daily habit reminders at the time you choose. You can disable this in Settings or your device notification settings.</li>
+        <li><strong>Exact Alarms</strong> — used to ensure habit reminders fire at the precise time you set. Without this, Android may delay reminders significantly.</li>
+        <li><strong>Receive Boot Completed</strong> — used to automatically reschedule your habit reminders after your device restarts, so you never miss a notification.</li>
+        <li><strong>Internet</strong> — used to connect to Firebase (account and sync), Google Play Billing (purchases), and Google Gemini (AI Coach).</li>
+    </ul>
+
+    <h2>5. Account Creation (Optional)</h2>
+    <p>
+        Creating an account is <strong>completely optional</strong>. The app works fully without an account.
+        An account is only needed if you want to restore your Pro subscription on a new device.
+    </p>
+
+    <h2>6. Account Deletion</h2>
+    <p>
+        You can delete your account at any time from <strong>Settings → Cloud Account → Delete Account</strong>.
+        This permanently removes your email and Pro status from our servers.
+        Your local habit data on your device is not affected.
+    </p>
+
+    <h2>7. Data Retention</h2>
+    <ul>
+        <li>Account data (email, Pro status) is retained until you delete your account.</li>
+        <li>Local habit data remains on your device until you uninstall the app.</li>
+    </ul>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+        Slotly is not directed at children under the age of 13. We do not knowingly collect
+        personal information from children under 13. If you believe a child has provided us
+        with personal information, please contact us and we will delete it immediately.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>
+        We use Firebase Authentication and Firestore, secured by Google's infrastructure.
+        All data transmitted between the app and Firebase is encrypted using TLS.
+    </p>
+
+    <h2>10. Governing Law</h2>
+    <p>
+        This Privacy Policy is governed by the laws of <strong>Jordan</strong>.
+        Any disputes shall be subject to the jurisdiction of the courts of Jordan.
+    </p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>
+        We may update this Privacy Policy from time to time. Changes will be reflected by
+        updating the "Last updated" date at the top of this page.
+    </p>
+
+    <h2>12. Contact Us</h2>
+    <p>
+        If you have any questions about this Privacy Policy, please contact:<br><br>
+        <strong>Ali Saleh</strong><br>
+        Jordan<br>
+        <a href="mailto:ali.saleh555.a5@gmail.com">ali.saleh555.a5@gmail.com</a>
+    </p>
+
+</div>
+
+<footer>
+    <a href="index.html" class="footer-logo">🌱 Slotly</a>
+    <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:ali.saleh555.a5@gmail.com">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Ali Saleh. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
